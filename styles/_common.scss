@@ -1,0 +1,88 @@
+/**
+ * @see https://docs.emmet.io/cheat-sheet/
+ */
+
+page {
+    --MainColor: #FF3535;
+    --BgColor: #F7F8FA;
+    --GradualBg: linear-gradient(to right, #FF2F44, #FF437D);
+    --FontColor3: #333;
+    --FontColor6: #666;
+    --FontColor9: #999;
+}
+
+view {
+    box-sizing: border-box;
+}
+
+image {
+    display: block;
+}
+
+.fw {
+    &-m {
+        font-weight: 600;
+    }
+    &-b {
+        font-weight: 900;
+    }
+}
+
+.ta {
+    &-c {
+        text-align: center;
+    }
+    &-r {
+        text-align: right;
+    }
+}
+
+.w_100 {
+    width: 100%;
+}
+
+// 超出一行显示省略号
+.ellipsis_1 {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+@for $i from 0 through 100 {
+    .fs-#{$i} {
+        font-size: #{$i}rpx !important;
+    }
+    .lh-#{$i}px {
+        line-height: #{$i}rpx !important;
+    }
+    .m-#{$i} {
+        margin: #{$i}rpx !important;
+    }
+    .mt-#{$i} {
+        margin-top: #{$i}rpx !important;
+    }
+    .ml-#{$i} {
+        margin-left: #{$i}rpx !important;
+    }
+    .mr-#{$i} {
+        margin-right: #{$i}rpx !important;
+    }
+    .mb-#{$i} {
+        margin-bottom: #{$i}rpx !important;
+    }
+    .p-#{$i} {
+        padding: #{$i}rpx !important;
+    }
+    .pt-#{$i} {
+        padding-top: #{$i}rpx !important;
+    }
+    .pl-#{$i} {
+        padding-left: #{$i}rpx !important;
+    }
+    .pr-#{$i} {
+        padding-right: #{$i}rpx !important;
+    }
+    .pb-#{$i} {
+        padding-bottom: #{$i}rpx !important;
+    }
+}

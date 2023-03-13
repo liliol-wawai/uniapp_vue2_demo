@@ -1,0 +1,132 @@
+/**
+ * @see https://docs.emmet.io/cheat-sheet/
+ */
+.d-f {
+    display: flex;
+}
+.ai {
+    &-b {
+        align-items: baseline;
+    }
+    &-c {
+        align-items: center;
+    }
+    &-fe {
+        align-items: flex-end;
+    }
+    &-fs {
+        align-items: flex-start;
+    }
+    &-s {
+        align-items: stretch;
+    }
+}
+.as {
+    &-b {
+        align-self: baseline;
+    }
+    &-c {
+        align-self: center;
+    }
+    &-fe {
+        align-self: flex-end;
+    }
+    &-fs {
+        align-self: flex-start;
+    }
+    &-s {
+        align-self: stretch;
+    }
+}
+.fxd {
+    &-c {
+        flex-direction: column;
+    }
+    &c-r {
+        flex-direction: column-reverse;
+    }
+    &-r {
+        flex-direction: row;
+    }
+    &-rr {
+        flex-direction: row-reverse;
+    }
+}
+.fxw {
+    &-n {
+        flex-wrap: nowrap;
+    }
+    &-w {
+        flex-wrap: wrap;
+    }
+    &-wr {
+        flex-wrap: wrap-reverse;
+    }
+}
+.jc {
+    &-c {
+        justify-content: center;
+    }
+    &-fe {
+        justify-content: flex-end;
+    }
+    &-fs {
+        justify-content: flex-start;
+    }
+    &-sa {
+        justify-content: space-around;
+    }
+    &-sb {
+        justify-content: space-between;
+    }
+}
+
+/* 布局类 */
+.row-flex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+.row-flex-right {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+}
+.row-flex-wrap {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.row-flex-justify {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+.row-flex-center {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.flex-item {
+    flex: 1;
+}
+.flex-item-center {
+    flex: 1;
+    text-align: center;
+    align-items: center;
+}
+.flex-item-end {
+    align-content: end;
+}
+.flex-item-fixed {
+    flex-shrink: 0;
+}
+.flex-grow {
+    flex-grow: 1;
+}
+.align-self-center {
+    align-self: center;
+}
